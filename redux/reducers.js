@@ -4,6 +4,8 @@ import {
 
 export const initState = {
   userName: '',
+  language: '',
+  genre: '',
   items: [],
 };
 
