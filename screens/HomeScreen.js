@@ -3,6 +3,7 @@ import { View } from 'react-native';
 import ItemComponent from '../components/ItemComponent';
 import { connect } from 'react-redux';
 import * as actions from '../redux/actions';
+import LoginComponent from '../components/LoginComponent';
 
 class HomeScreen extends React.Component {
   componentDidMount() {
@@ -16,6 +17,7 @@ class HomeScreen extends React.Component {
         {items && 
           <ItemComponent items={items} />
         }
+        <LoginComponent style={{ flex: 1 }}></LoginComponent>
       </View>
     );
   }
@@ -30,4 +32,5 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeScreen);
+
 
