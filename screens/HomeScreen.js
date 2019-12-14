@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import ItemComponent from '../components/ItemComponent';
+import LoginComponent from '../components/LoginComponent';
+
 
 export default function HomeScreen() {
   const items = [
@@ -13,7 +15,9 @@ export default function HomeScreen() {
   return (
     <View>
       <ItemComponent items={items} />
+      <LoginComponent style={{ flex: 1 }}></LoginComponent>
     </View>
   );
 }
+
 
