@@ -12,7 +12,7 @@ const getCard = (item) => {
         marginHorizontal: 0,
         marginVertical: 0,
       }}
-      image={require('../assets/asd.jpg')}
+      image={require('../assets/flower.jpg')}
       imageProps={{PlaceholderContent: <ActivityIndicator />}}
     >
       <Text style={{marginBottom: 10}}>

@@ -17,7 +17,6 @@ class HomeScreen extends React.Component {
         {items && 
           <ItemComponent items={items} />
         }
-        <LoginComponent style={{ flex: 1 }}></LoginComponent>
       </View>
     );
   }
